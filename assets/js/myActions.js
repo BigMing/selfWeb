@@ -1,8 +1,8 @@
 /**
- * 点击页面右上角联系我按钮
+ * 点击页面右上角联系我按钮以及点击邮件地址
  */
 // 邮箱授权码 eakdgkwazzuibjea
-$("#contactMe").click(function () {
+$("#contactMe, #email").click(function () {
     $.confirm({
         title: '有什么话想发到老孙邮箱？',
         content: '' +
@@ -32,63 +32,6 @@ $("#contactMe").click(function () {
                         data: {
                             body : name,
                             email : email
-                        },
-                        type: 'post',
-                        dataType: 'json',
-                        async: false,
-                        success: function (data, status) {
-                            $.alert(data + " ; " + status);
-                        },
-                        error: function () {
-
-                        }
-                    });
-                    $.alert("已经发送到老孙邮箱啦🙃");
-                }
-            },
-            cancel: {
-                text: '取消'
-            }
-        },
-        onContentReady: function () {
-            // bind to events
-            var jc = this;
-            this.$content.find('form').on('submit', function (e) {
-                // if the user submits the form by pressing enter in the field.
-                e.preventDefault();
-                jc.$$formSubmit.trigger('click'); // reference the button and click it
-            });
-        }
-    });
-});
-
-/**
- * 点击关于我中的邮箱地址
- */
-$("#email").click(function () {
-    $.confirm({
-        title: '有什么话想发到老孙邮箱？',
-        content: '' +
-        '<form action="" class="formName">' +
-        '<div class="form-group">' +
-        '<label>请在这里输入</label>' +
-        '<textarea rows="3" class="name form-control" required />' +
-        '</div>' +
-        '</form>',
-        buttons: {
-            formSubmit: {
-                text: '发送',
-                btnClass: 'btn-blue',
-                action: function () {
-                    var name = this.$content.find('.name').val();
-                    if(!name){
-                        $.alert('请输入内容哦😀');
-                        return false;
-                    }
-                    $.ajax({
-                        url: 'actions/sendEmail.php',
-                        data: {
-                            body : name
                         },
                         type: 'post',
                         dataType: 'json',
