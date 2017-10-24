@@ -6,11 +6,15 @@ $("#contactMe").click(function () {
     $.confirm({
         title: '有什么话想发到老孙邮箱？',
         content: '' +
-        '<form action="" class="formName">' +
+        '<form class="formName">' +
         '<div class="form-group">' +
         '<label>请在这里输入</label>' +
         '<textarea rows="3" class="name form-control" required />' +
         '</div>' +
+        '<div class="form-group">'+
+        '<label>请留下您的联系方式</label>'+
+        '<input type="email" required placeholder="EmailAddress@xxx.xxx" class="email form-control">'+
+        '</div>'+
         '</form>',
         buttons: {
             formSubmit: {
@@ -18,14 +22,16 @@ $("#contactMe").click(function () {
                 btnClass: 'btn-blue',
                 action: function () {
                     var name = this.$content.find('.name').val();
-                    if(!name){
+                    var email = this.$content.find('.email').val();
+                    if(!name || !email){
                         $.alert('请输入内容哦😀');
                         return false;
                     }
                     $.ajax({
                         url: 'actions/sendEmail.php',
                         data: {
-                            body : name
+                            body : name,
+                            email : email
                         },
                         type: 'post',
                         dataType: 'json',

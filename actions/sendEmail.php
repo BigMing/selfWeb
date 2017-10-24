@@ -8,5 +8,10 @@
 require '../phpmailer/function.php';
 
 $body = $_POST['body'];
+$email = $_POST['email'];
 
-sendEmail('个人主页发来的邮件', $body);
+$real_body = $body."<hr>".$email;
+
+echo $real_body;
+
+sendEmail('个人主页发来的邮件', $real_body);
