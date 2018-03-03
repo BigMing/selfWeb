@@ -48,11 +48,16 @@
             <h1 class="name">孙佳明</h1>
             <h2 class="desc">可能是成电游的最快的程序猿</h2>
             <ul class="social list-inline">
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-github-alt"></i></a></li>
-                <li class="last-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-hacker-news"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i
+                        class="fa fa-twitter"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i
+                        class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i
+                        class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="<h3>不好意思，点我没啥用😅</h3>"><i
+                        class="fa fa-github-alt"></i></a></li>
+                <li class="last-item"><a href="#" data-toggle="tooltip" data-placement="bottom"
+                                         title="<h3>不好意思，点我没啥用😅</h3>"><i class="fa fa-hacker-news"></i></a></li>
             </ul>
         </div><!--//profile-->
         <a class="btn btn-cta-primary pull-right" id="contactMe">
@@ -84,51 +89,88 @@
 
             <section class="latest section">
                 <div class="section-inner">
-                    <h2 class="heading">最近的项目</h2>
+                    <h2 class="heading">最近的工作</h2>
                     <div class="content">
 
                         <div class="item featured text-center">
                             <h3 class="title">
-                                <a id="project1_title">基于云平台的天地一体化网络仿真系统</a>
+                                <a id="project1_title">基于云平台的二层网络仿真技术研究</a>
                             </h3>
-                            <p class="summary">电子科技大学航空航天学院 & 中电科54所项目</p>
+                            <p class="summary">在天地一体化仿真测试平台上设计开发二层交换机节点的仿真</p>
                             <div class="featured-image">
-                                <a id="project1_img1">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-0.png" alt="project name"/>
+                                <a id="project1_img1" href="assets/images/projects/L2_01.png" target="_blank">
+                                    <img class="img-responsive project-image"
+                                         src="assets/images/projects/L2_01.png"
+                                         alt="project name"/>
                                 </a>
                                 <div class="ribbon">
                                     <div class="text">New</div>
                                 </div>
                             </div>
+                            <!--<iframe height=498 width=510 src='http://player.youku.com/embed/XMzE5NDUzNTIzNg==' frameborder=0 'allowfullscreen'></iframe>-->
                             <div class="desc text-left">
+                                <p>
+                                    OpenStack平台本身提供虚拟网段，用以连接各虚拟化实例进行通信，以此来实现对三层网络的仿真。
+                                    针对复杂仿真场景下对二层网络仿真的需求，设计出实现在云平台中虚拟化二层网络的方案并实现。
+                                    同时需要将网络物理层特性精确映射为数据链路层及网络层相关性能指标（包括：丢包率、时延、带宽、误码率等）。
+                                    依靠云平台的多重网络虚拟化的组合模型和Linux流量控制工具（Traffic Control），
+                                    能确保这种层间的映射模型在仿真测试平台的虚拟网络中得到有效的实施，从而获得更为精确的仿真结果。
+                                </p>
+                                <p>
+                                    在云平台网络仿真系统中开发实现KVM虚拟机和虚拟容器仿真的二层网络的功能，并能够在仿真平台上对其进行与三层设备相似的管理，并优化整个仿真系统的性能.
+                                </p>
+                            </div><!--//desc-->
+                            <!--<a class="btn btn-cta-secondary" href="#" target="_blank">-->
+                            <!--<i class="fa fa-thumbs-o-up"></i>-->
+                            <!--Back my project-->
+                            <!--</a>-->
+                            <a class="more-link">
+                                <i class="fa fa-external-link"></i>
+                                Find out more
+                            </a>
+                        </div><!--//item-->
+
+                        <hr class="divider"/>
+
+                        <div class="item row">
+                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/project-0.png"
+                               target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/project-0.png"
+                                     alt="project name">
+                            </a>
+                            <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                <h3 class="title"><a>基于云平台的天地一体化网络仿真系统（中电科54所项目）</a></h3>
                                 <p>
                                     本网络仿真测试系统基于云计算及其相关技术设计和构建，所涉及的主要技术包括：
                                     云计算（Cloud Computing）技术、主机虚拟化(Host virtualization)技术、轻量级虚拟化(Light virtualization)技术、
-                                    虚拟网络(Virtual Networking) 技术、网络功能虚拟化(Network Functional Virtualization, NFV)技术、流量导向(Traffic Steering)技术等。
-                                    项目成果能够为向广大网络科研工作者、网络运维、协议软件开发工程师提供灵活可扩展的“网络仿真即服务（Network Emulation-as-a-Service）”类型云服务，从而极大提升网络研究与开发效率。
+                                    虚拟网络(Virtual Networking) 技术、网络功能虚拟化(Network Functional Virtualization,
+                                    NFV)技术、流量导向(Traffic Steering)技术等。
+                                    项目成果能够为向广大网络科研工作者、网络运维、协议软件开发工程师提供灵活可扩展的“网络仿真即服务（Network
+                                    Emulation-as-a-Service）”类型云服务，从而极大提升网络研究与开发效率。
                                 </p>
                                 <p>
                                     利用本网络仿真测试系统能够为目标网络建立仿真网络，并在仿真网络上部署、运行和测试目标网络各层协议及上层软件。
                                     整套仿真测试系统建立在云计算平台之上，具备云服务所有重要优点，创新性地将网络仿真作为一种云服务按需向各类用户提供。
                                     能够有效提升网络仿真平台的利用率，降低网络开发与测试之成本。
                                 </p>
+                                <p>
+                                    <a class="more-link" href="https://github.com/BigMing/networkSimulationFront"
+                                       target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                        View on GitHub
+                                    </a>
+                                </p>
                             </div><!--//desc-->
-                            <!--<a class="btn btn-cta-secondary" href="#" target="_blank">-->
-                                <!--<i class="fa fa-thumbs-o-up"></i>-->
-                                <!--Back my project-->
-                            <!--</a>-->
-                            <a class="more-link" href="https://github.com/BigMing/networkSimulationFront" target="_blank">
-                                <i class="fa fa-external-link"></i>
-                                View on GitHub
-                            </a>
                         </div><!--//item-->
-                        <hr class="divider"/>
+
                         <div class="item row">
-                            <a id="architectureImg" class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/architecture.png" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/architecture.png" alt="project name">
+                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/architecture.png"
+                               target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/architecture.png"
+                                     alt="project name">
                             </a>
                             <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                <h3 class="title"><a >系统架构</a></h3>
+                                <h3 class="title"><a>系统架构</a></h3>
                                 <p>
                                     采用当前业界广泛部署的OpenStack开源云平台资源管理软件对项目拟实现的仿真测试系统底层云平台中的各系统类资源（计算、网络和存储资源）进行管理，
                                     实现各类资源动态、灵活、便捷地分配与回收，从而为上层仿真测试平台提供实时的仿真目标网络拓扑构建及撤销、统一资源配置、管控及部署能力；
@@ -136,7 +178,7 @@
                                     采用OpenStack框架中的Cinder/Swift组件对平台中存储资源进行管理。
                                 </p>
                                 <p>
-                                    <a class="more-link" >
+                                    <a class="more-link">
                                         <i class="fa fa-external-link"></i>
                                         Find out more
                                     </a>
@@ -145,12 +187,14 @@
                         </div><!--//item-->
 
                         <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/scenario.png" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/scenario.png" alt="project name"/>
+                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/scenario.png"
+                               target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/scenario.png"
+                                     alt="project name"/>
                             </a>
                             <div class="desc col-md-8 col-sm-8 col-xs-12">
                                 <h3 class="title">
-                                    <a >应用场景</a>
+                                    <a>应用场景</a>
                                 </h3>
                                 <p>
                                     天地一体化网络是“综合利用新型信息网络技术，以使命为导向，以任务为驱动，以信息流为载体，充分发挥空、天、地信息技术的各自优势，
@@ -160,7 +204,7 @@
                                     通过星间、星地链路将地面、海上、空中和深空中的用户、飞行器及各类通信平台密集联合。
                                 </p>
                                 <p>
-                                    <a class="more-link" >
+                                    <a class="more-link">
                                         <i class="fa fa-external-link"></i>
                                         Find out more
                                     </a>
@@ -169,43 +213,43 @@
                         </div><!--//item-->
 
                         <!--<div class="item row">-->
-                            <!--<a class="col-md-4 col-sm-4 col-xs-12"-->
-                               <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">-->
-                                <!--<img class="img-responsive project-image" src="assets/images/projects/project-1.png"-->
-                                     <!--alt="project name"/>-->
-                            <!--</a>-->
-                            <!--<div class="desc col-md-8 col-sm-8 col-xs-12">-->
-                                <!--<h3 class="title"><a-->
-                                        <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/"-->
-                                        <!--target="_blank">Tempo - Designed for Startups</a></h3>-->
-                                <!--<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus-->
-                                    <!--a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu-->
-                                    <!--suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non-->
-                                    <!--turpis.</p>-->
-                                <!--<p><a class="more-link"-->
-                                      <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/"-->
-                                      <!--target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>-->
-                            <!--</div>&lt;!&ndash;//desc&ndash;&gt;-->
+                        <!--<a class="col-md-4 col-sm-4 col-xs-12"-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">-->
+                        <!--<img class="img-responsive project-image" src="assets/images/projects/project-1.png"-->
+                        <!--alt="project name"/>-->
+                        <!--</a>-->
+                        <!--<div class="desc col-md-8 col-sm-8 col-xs-12">-->
+                        <!--<h3 class="title"><a-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/"-->
+                        <!--target="_blank">Tempo - Designed for Startups</a></h3>-->
+                        <!--<p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus-->
+                        <!--a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu-->
+                        <!--suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non-->
+                        <!--turpis.</p>-->
+                        <!--<p><a class="more-link"-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-startups-tempo/"-->
+                        <!--target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>-->
+                        <!--</div>&lt;!&ndash;//desc&ndash;&gt;-->
                         <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
                         <!--<div class="item row">-->
-                            <!--<a class="col-md-4 col-sm-4 col-xs-12"-->
-                               <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
-                               <!--target="_blank">-->
-                                <!--<img class="img-responsive project-image" src="assets/images/projects/project-2.png"-->
-                                     <!--alt="project name"/>-->
-                            <!--</a>-->
-                            <!--<div class="desc col-md-8 col-sm-8 col-xs-12">-->
-                                <!--<h3 class="title"><a-->
-                                        <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
-                                        <!--target="_blank">Delta - Designed for Mobile Apps</a></h3>-->
-                                <!--<p> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet.-->
-                                    <!--Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.-->
-                                    <!--Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper-->
-                                    <!--libero, sit amet adipiscing sem neque sed ipsum.</p>-->
-                                <!--<p><a class="more-link"-->
-                                      <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
-                                      <!--target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>-->
-                            <!--</div>&lt;!&ndash;//desc&ndash;&gt;-->
+                        <!--<a class="col-md-4 col-sm-4 col-xs-12"-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
+                        <!--target="_blank">-->
+                        <!--<img class="img-responsive project-image" src="assets/images/projects/project-2.png"-->
+                        <!--alt="project name"/>-->
+                        <!--</a>-->
+                        <!--<div class="desc col-md-8 col-sm-8 col-xs-12">-->
+                        <!--<h3 class="title"><a-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
+                        <!--target="_blank">Delta - Designed for Mobile Apps</a></h3>-->
+                        <!--<p> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet.-->
+                        <!--Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.-->
+                        <!--Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper-->
+                        <!--libero, sit amet adipiscing sem neque sed ipsum.</p>-->
+                        <!--<p><a class="more-link"-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
+                        <!--target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>-->
+                        <!--</div>&lt;!&ndash;//desc&ndash;&gt;-->
                         <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
                     </div><!--//content-->
@@ -220,12 +264,13 @@
                     <div class="content">
 
                         <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" >
-                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name"/>
+                            <a class="col-md-4 col-sm-4 col-xs-12">
+                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png"
+                                     alt="project name"/>
                             </a>
                             <div class="desc col-md-8 col-sm-8 col-xs-12">
                                 <h3 class="title" id="webtmTitle">
-                                    <a >Web TM_System</a>
+                                    <a>Web TM_System</a>
                                 </h3>
                                 <p>是一个翻译者辅助工具，通过处理、记录海量的双语对照的翻译信息，对翻译工作者当前翻译的文档进行最优化的译文推荐。</p>
                                 <p>老孙的主要工作是在Elasticsearch的基础上实现了多个自然语言匹配算法进行相应语句的搜索，该部分是老孙的本科毕业设计。</p>
@@ -237,28 +282,30 @@
                                 </p>
                             </div>
                             <!--<h3 class="title">-->
-                                <!--<a href="#" target="_blank">Web TM_System</a>-->
+                            <!--<a href="#" target="_blank">Web TM_System</a>-->
                             <!--</h3>-->
                             <!--<p class="summary">-->
-                                <!--Provide a brief description of your project. Ut enim ad minima veniam,-->
-                                <!--quis nostrum exercitationem ullam corporis suscipit laboriosam,-->
-                                <!--nisi ut aliquid ex ea commodi consequatu.-->
+                            <!--Provide a brief description of your project. Ut enim ad minima veniam,-->
+                            <!--quis nostrum exercitationem ullam corporis suscipit laboriosam,-->
+                            <!--nisi ut aliquid ex ea commodi consequatu.-->
                             <!--</p>-->
                             <!--<p>-->
-                                <!--<a class="more-link" href="https://github.com/BigMing/Web_TM_Demo" target="_blank">-->
-                                    <!--<i class="fa fa-external-link"></i>-->
-                                    <!--View on GitHub-->
-                                <!--</a>-->
+                            <!--<a class="more-link" href="https://github.com/BigMing/Web_TM_Demo" target="_blank">-->
+                            <!--<i class="fa fa-external-link"></i>-->
+                            <!--View on GitHub-->
+                            <!--</a>-->
                             <!--</p>-->
                         </div><!--//item-->
 
                         <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/project_market1.jpg" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_market1.jpg" alt="project name"/>
+                            <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/project_market1.jpg"
+                               target="_blank">
+                                <img class="img-responsive project-image"
+                                     src="assets/images/projects/project_market1.jpg" alt="project name"/>
                             </a>
                             <div class="desc col-md-8 col-sm-8 col-xs-12">
                                 <h3 class="title" id="markerTitle">
-                                    <a >Flea Market</a>
+                                    <a>Flea Market</a>
                                 </h3>
                                 <p>老孙本科大三的短学期软件实训项目，老孙主要复杂的后台代码的编写。</p>
                                 <p>小组共四人完成，是一个Spring mvc和mybatis做的校园二手交易市场。</p>
@@ -270,24 +317,24 @@
                                 </p>
                             </div>
                             <!--<h3 class="title">-->
-                                <!--<a href="#">Flea Market</a>-->
-                                <!--&lt;!&ndash;<span class="label label-theme">Open Source</span>&ndash;&gt;-->
+                            <!--<a href="#">Flea Market</a>-->
+                            <!--&lt;!&ndash;<span class="label label-theme">Open Source</span>&ndash;&gt;-->
                             <!--</h3>-->
                             <!--<p class="summary">Provide a brief description of your project. Maecenas ornare ultricies-->
-                                <!--risus, in fermentum augue consectetur in.-->
-                                <!--Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>-->
+                            <!--risus, in fermentum augue consectetur in.-->
+                            <!--Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>-->
                             <!--<p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>-->
                         </div>
 
                         <!--<div class="item">-->
-                            <!--<h3 class="title"><a href="#">Project Title Maecenas Ornare</a> <span-->
-                                    <!--class="label label-theme">Open Source</span></h3>-->
-                            <!--<p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet,-->
-                                <!--consectetur adipiscing elit. In vel purus enim.-->
-                                <!--Etiam tortor felis, fermentum ac ultrices sed.</p>-->
-                            <!--<p><a class="more-link"-->
-                                  <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
-                                  <!--target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>-->
+                        <!--<h3 class="title"><a href="#">Project Title Maecenas Ornare</a> <span-->
+                        <!--class="label label-theme">Open Source</span></h3>-->
+                        <!--<p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet,-->
+                        <!--consectetur adipiscing elit. In vel purus enim.-->
+                        <!--Etiam tortor felis, fermentum ac ultrices sed.</p>-->
+                        <!--<p><a class="more-link"-->
+                        <!--href="#website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"-->
+                        <!--target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>-->
                         <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
 
                         <!--<a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a>-->
@@ -365,7 +412,7 @@
                                                                   data-placement="left" data-animation="true"
                                                                   title="了解JVM基础">Learner</span></h3>
                                 <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="75%"></div>
+                                    <div class="level-bar-inner" data-level="70%"></div>
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
@@ -378,14 +425,8 @@
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="level-title">OpenStack<span class="level-label">Learner</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="65%"></div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="level-title">Docker<span class="level-label">Learner</span></h3>
+                                <h3 class="level-title">OpenStack &amp; Docker<span class="level-label">Learner</span>
+                                </h3>
                                 <div class="level-bar">
                                     <div class="level-bar-inner" data-level="60%"></div>
                                 </div><!--//level-bar-->
@@ -394,12 +435,12 @@
                             <div class="item">
                                 <h3 class="level-title">English<span class="level-label">CET4 & CET6</span></h3>
                                 <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="80%"></div>
+                                    <div class="level-bar-inner" data-level="75%"></div>
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
                             <!--<p>-->
-                                <!--<a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a>-->
+                            <!--<a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a>-->
                             <!--</p>-->
                         </div>
                     </div><!--//content-->
@@ -407,27 +448,27 @@
             </aside><!--//section-->
 
             <!--<aside class="languages aside section">-->
-                <!--<div class="section-inner">-->
-                    <!--<h2 class="heading">英语</h2>-->
-                    <!--<div class="content">-->
-                        <!--<ul class="list-unstyled">-->
-                            <!--<li class="item">-->
-                                <!--<span class="title"><strong>考试：</strong></span>-->
-                                <!--<span class="level">仅仅是过了CET4 & CET6 <br class="visible-xs"/>-->
-                                        <!--<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i-->
-                                            <!--class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>-->
-                                    <!--</span>-->
-                            <!--</li>&lt;!&ndash;//item&ndash;&gt;-->
-                            <!--<li class="item">-->
-                                <!--<span class="title"><strong>听说读写：</strong></span>-->
-                                <!--<span class="level">还能说得过去😁<br class="visible-sm visible-xs"/>-->
-                                        <!--<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i-->
-                                            <!--class="fa fa-star"></i><i class="fa fa-star-o"></i>-->
-                                    <!--</span>-->
-                            <!--</li>&lt;!&ndash;//item&ndash;&gt;-->
-                        <!--</ul>-->
-                    <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
-                <!--</div>&lt;!&ndash;//section-inner&ndash;&gt;-->
+            <!--<div class="section-inner">-->
+            <!--<h2 class="heading">英语</h2>-->
+            <!--<div class="content">-->
+            <!--<ul class="list-unstyled">-->
+            <!--<li class="item">-->
+            <!--<span class="title"><strong>考试：</strong></span>-->
+            <!--<span class="level">仅仅是过了CET4 & CET6 <br class="visible-xs"/>-->
+            <!--<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i-->
+            <!--class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>-->
+            <!--</span>-->
+            <!--</li>&lt;!&ndash;//item&ndash;&gt;-->
+            <!--<li class="item">-->
+            <!--<span class="title"><strong>听说读写：</strong></span>-->
+            <!--<span class="level">还能说得过去😁<br class="visible-sm visible-xs"/>-->
+            <!--<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i-->
+            <!--class="fa fa-star"></i><i class="fa fa-star-o"></i>-->
+            <!--</span>-->
+            <!--</li>&lt;!&ndash;//item&ndash;&gt;-->
+            <!--</ul>-->
+            <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
+            <!--</div>&lt;!&ndash;//section-inner&ndash;&gt;-->
             <!--</aside>&lt;!&ndash;//section&ndash;&gt;-->
 
             <aside class="info aside section">
@@ -445,10 +486,10 @@
                             有较多高水平团队赛事经验。东南大学校艺术团西乐团萨克斯手，所在团队获校才艺大赛冠军（2014）。东南大学校三好学生（2014）。
                         </p>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-map-marker"></i><span >地址：</span>电子科技大学清水河校区</li>
+                            <li><i class="fa fa-map-marker"></i><span>地址：</span>电子科技大学清水河校区</li>
                             <li>
                                 <i class="fa fa-envelope-o"></i>
-                                <span >Email:</span>
+                                <span>Email:</span>
                                 <a id="email">532692737@qq.com</a>
                             </li>
                             <!--<li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li>-->
@@ -482,12 +523,12 @@
             <!--</aside>&lt;!&ndash;//section&ndash;&gt;-->
 
             <!--<aside class="blog aside section">-->
-                <!--<div class="section-inner">-->
-                    <!--<h2 class="heading">Latest Blog Posts</h2>-->
-                    <!--<p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery-->
-                        <!--RSS plugin</a> to pull in your blog post feeds.</p>-->
-                    <!--<div id="rss-feeds" class="content"></div>&lt;!&ndash;//content&ndash;&gt;-->
-                <!--</div>&lt;!&ndash;//section-inner&ndash;&gt;-->
+            <!--<div class="section-inner">-->
+            <!--<h2 class="heading">Latest Blog Posts</h2>-->
+            <!--<p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery-->
+            <!--RSS plugin</a> to pull in your blog post feeds.</p>-->
+            <!--<div id="rss-feeds" class="content"></div>&lt;!&ndash;//content&ndash;&gt;-->
+            <!--</div>&lt;!&ndash;//section-inner&ndash;&gt;-->
             <!--</aside>&lt;!&ndash;//section&ndash;&gt;-->
 
             <!--<aside class="list music aside section">-->

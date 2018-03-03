@@ -79,9 +79,9 @@ $("#webtmTitle").click(function () {
 /**
  * 点击仿真系统项目
  */
-$("#project1_img1").click(function () {
-    $.alert("后续会部署到服务器上。");
-});
+// $("#project1_img1").click(function () {
+//     $.alert("后续会部署到服务器上。");
+// });
 $("#project1_title").click(function () {
     $.alert("后续会部署到服务器上。");
 });
